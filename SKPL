@@ -23,3 +23,19 @@ Antarmuka Hardware yang dibutuhkan untuk mengoperasikan aplikasi adalah sebuah s
  Antarmuka Software yang dibutuhkan untuk mengoperasikan aplikasi adalah sebuah smartphone android versi 3.0 keatas dan sistem operasi winwods xp keatas untuk admin
 3.1.4. Antarmuka Komunikasi 
 Antarmuka Hardware yang dibutuhkan untuk mengoperasikan aplikasi adalah sebuah paket data internet
+3.1.5 Kebutuhan Fungsional 
+Berikut adalah kebutuhan fungsional dari petani dan pembeli pada aplikasi melijo
+    1.	Untuk petani 
+-	Sistem dapat melakukan input profil
+-	Sistem menyediakan fitur untuk mengedit foto profil
+-	Sistem menyediakan fitur untuk mengunggah foto sayur dari petani 
+-	Sistem menyediakan fitur untuk mengedit produk
+-	Sistem dapat menghitung jumlah stok
+-	Sistem menyediakan sistem pembayaran melalui transfer. Transfer melalui rekening dari aplikasi dan admin akan menyalurkan ke rekening petani  
+-	Sistem menyediakan fitur untuk pembatasan pembelian jumlah sayur untuk menghindari pengepul.   
+    2.	Untuk pembeli 
+-	Sistem menyediakan fitur untuk pemesanan sayur
+-	Sistem menyedikan fitur untuk melakukan input profil
+-	Sistem menyediakan fitur untuk mengedit foto profil
+-	Sistem menyediakan fitur pencarian untuk mencari jeni sayur atau jenis nama petani yang pembeli inginkan. 
+-	Sistem menyediakan fitur untuk membeli sayur dari tukang sayur yang berbeda
