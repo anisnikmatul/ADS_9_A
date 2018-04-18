@@ -1,0 +1,44 @@
+Use Case
+Fitur 
+  1.	Petani 
+    -	Isi profil petani 
+    -	Edit profil petani
+    -	Menambah informasi sayur
+    -	Menggungah foto sayur dan informasinya 
+    -	Mengisi stok sayur 
+    -	Mengedit stok sayur
+    -	Menghapus informasi sayur 
+    -	chatting
+  2.	Pembeli 
+    -	Isi profil pembeli 
+    -	Edit profil  pembeli
+    -	Memesan sayur
+    -	Membeli sayur 
+    -	Membayar sayur 
+    -	Memsan jasa pengiriman
+    -	chatting
+  3.	Admin
+    -	Melakukan validasi pembeli untuk mengindari pengepul dan pembeli yang nakal
+    -	Membatasi jumlah pembelian sayur.
+
+Use Case Description
+Use Case Name 	                  Pesan Sayur
+
+Aktor 	                          - Pembeli (Pemilik Toko)
+
+Description	                      - Pembeli (Pemilik Toko) melakukan pemesanan sayur kepada petani melali fitur pesan sayur 
+
+Trigger                          	- Menghindari pengepul sayuran (external)
+
+Precondition 	                    -	Sistem menampilkan form pemesanan sayur
+                                  -	Pembeli harus terverifikasi bukan seorang pengepul sayuran
+
+Normal Course                   	-	Pembeli mengisi form pemesanan sayur
+                                  -	Pembeli memilih menggunakan jasa pengeriman
+                                  -	Pembeli melakukan pembayaran via transfer
+
+Post condition	                  - Sistem menampilkan rincian pemesanan
+
+Exception 	                      -	Pembeli tidak dapat melakukan pemesanan sebelum divalidasi oleh admin
+                                  -	Sistem akan menampilak pemberitahuan langsung jika ada pemesanan sayur melibihi batas yang telah ditemtukan 
+
