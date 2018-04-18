@@ -25,17 +25,23 @@ Antarmuka Hardware yang dibutuhkan untuk mengoperasikan aplikasi adalah sebuah s
 Antarmuka Hardware yang dibutuhkan untuk mengoperasikan aplikasi adalah sebuah paket data internet
 3.1.5 Kebutuhan Fungsional 
 Berikut adalah kebutuhan fungsional dari petani dan pembeli pada aplikasi melijo
-    1.	Untuk petani 
--	Sistem dapat melakukan input profil
--	Sistem menyediakan fitur untuk mengedit foto profil
--	Sistem menyediakan fitur untuk mengunggah foto sayur dari petani 
--	Sistem menyediakan fitur untuk mengedit produk
--	Sistem dapat menghitung jumlah stok
--	Sistem menyediakan sistem pembayaran melalui transfer. Transfer melalui rekening dari aplikasi dan admin akan menyalurkan ke rekening petani  
--	Sistem menyediakan fitur untuk pembatasan pembelian jumlah sayur untuk menghindari pengepul.   
-    2.	Untuk pembeli 
--	Sistem menyediakan fitur untuk pemesanan sayur
--	Sistem menyedikan fitur untuk melakukan input profil
--	Sistem menyediakan fitur untuk mengedit foto profil
--	Sistem menyediakan fitur pencarian untuk mencari jeni sayur atau jenis nama petani yang pembeli inginkan. 
--	Sistem menyediakan fitur untuk membeli sayur dari tukang sayur yang berbeda
+-	Untuk Petani
+ID		Kebutuhan								Penjelasan
+SRS-F-OUT-001 	Sistem  menampilkan Form Login						Pengguna dapat login menggunakan g-mail
+SRS-F-OUT-002	Sistem menampilkan Tampilan Beranda 					Tampilan beranda berisi daftar nama produk yang tersedia dan produk yang yang bisa dipesan 
+SRS-F-OUT-003	Sistem dapat malakukan input foto profil 				Tampilan form pengupdatean profil dari penjual maupun pembeli
+SRS-F-OUT-004	Sistem menyediakan fitur untuk mengunggah foto sayur dari petani	Tampilan form untuk mengunggah produk dari petani
+SRS-F-OUT-005	Sistem menyediakan fitur untuk mengedit produk 				Tampilan form pengupdatean produk dari petani seperti harga dan stok produk
+SRS-F-OUT-006	Sistem dapat menghitung jumlah stok 					Sistem dapat otomatis menghitung sisa jumlah stok setelah pembeli melakukan pembelian 
+SRS-F-OUT-007	Sistem menyediakan sistem pembayaran melalui transfer 			Transfer yang dilakukan pembeli menuju rekening aplikasi dan dari pihak aplikasi akan menyalurkan ke rekening admin
+SRS-F-OUT-008	Sistem menyediakan fitur pembatasan pembelian jumlah sayur 	 	Sistem membatasi jumlah pembelian produk untuk menghindari pengepul 
+
+
+-	Untuk Pembeli 
+
+ID		Kebutuhan								Penjelasan 
+SRS-F-OUT-001	Sistem menyediakan fitur untuk pemesanan sayur				Sistem menampilkan tampilan berupa form untuk pemmesanan sayur 
+SRS-F-OUT-002	Sistem dapat malakukan input foto profil				Tampilan form pengupdatean profil dari penjual maupun pembeli
+SRS-F-OUT-003	Sistem meydiakan fitur pencarian					Sistem menyediakan fitur pencarian untuk mencari produk maupun petani
+SRS-F-OUT-005	Sistem menyediakan fitur pembelian sayur				Sistem menampilkan tampilan berupa form untuk pembelian sayur
+SRS-F-OUT-006	Sistem menyediakan fitur untuk membeli sayur dari petani yang berbeda	Pembeli dapat membeli sayur dari petani yang berbeda
