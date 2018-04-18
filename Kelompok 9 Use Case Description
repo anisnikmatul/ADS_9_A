@@ -1,0 +1,30 @@
+Use Case Specification: Pesan Sayur
+1.	Isi Berkas Lahan
+  1.1	Brief Description
+Use case ini mendeskripsikan user yang akan mengisi form  pemesanan sayur.
+2.	Flow of Events
+  2.1	Basic Flow 
+    2.1.1	Tekan menu pesan sayur
+    2.1.2a sistem akan menampilkan halaman pengisian form berkas pesan sayur
+    2.1.2	Mengisi jumlah sayiur dalam satuan kilo.
+    2.1.3	Mengisi tanggal untuk pemesanan sayur.
+    2.1.3a  sistem menampilkan total harga yang harus dibayar 
+    2.1.4	Klik tombol pesan
+    2.1.6a sistem menampilkan laporan pemesanan sayur selesai.
+    2.1.6b Sistem mengarahkan ke menu pembayaran.
+  2.2	Alternative Flows
+    2.2.1	Muncul kotak dialog validasi data
+    2.2.1a sistem akan menampilkan kotak dialog validasi yang berisi pilihan Ya atau Tidak untuk memesan sayur
+  2.3	Exceptional Flow
+    2.3.1	Pada poin 2.1.1 sistem tidak muncul (Request Time Out )
+    2.3.2	Pada poin 2.1.6 Tombol pesan  tidak bisa di klik karena ada salah satu form  yang belum di isi atau salah
+
+3.	Special Requirements
+  3.1	Security
+  •	Sistem hanya dapat di akses oleh pengguna yang telah terotentikasi dan terotorisasi
+  3.3	Portability
+  •	Sistem dibangun sebagai aplikasi android.
+4.	Pre-Conditions
+  4.1	sistem menampilkan tampilan form pemesan sayur
+5.	Post-Conditions
+  5.1	laporan bahwa  pemesanan sayur selesai
