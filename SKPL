@@ -1,3 +1,41 @@
+BAB 2
+2.	Deskripsi  Umum Perangkat lunak
+	2.1.	Deskripsi Umum Sistem
+		Melijo merupakan aplikasi e-commerce berbasis mobile khususnya android yang memiliki tujuan menjual sayuran-sayuran.
+	Di aplikasi ini pengguna ini dapat melakukan aksi berupa pendaftaran sebagai petani dan penjual yang telah terddaftar 
+	melalui proses sign in terhadap aplikasi tersebut. Petani yang telah melakukan pendaftaran melalui proses sign in dapat
+	menambahkan informasi sayur, mengunggah foto sayur,  mengisi stok sayur, mengedit stok sayur, menghapus informasi sayur 
+	dan untuk penjual (pembeli) dapat melakukan pesa, beli , membayar dan memesan jasa pengiriman. Aplikasi ini terdapat form 
+	pembelian unruk para penjual yang berperan sebagai pembeli dari sayur dari petani. Untuk pembayaran dari dengan melakukan 
+	pembayaran e-banking jadi pada aplikasi tersebut menyediakan form pembayaran yang langsung terhubung langsung dengan bank 
+	yang telah bekerja sama, setelah mengisi form pembayar akan mengirimkan notifikasi terhadap bank kemudian mendapat notifikasi 
+	ke petani dan petani mengirimkan sayur yang telah dipilih melalui form yang dipilih oleh penjual (pembeli) dengan jasa kurir
+		Aplikasi ini dikelola oleh admin yang bertugas seperti memperbarui katalog, data dari  pelanggan dan data pemesanan. 
+	Data data tersebut merupakan tanggung jawab pihakk melijo dalam bentuk laporan pertangggungjawaban  Laporan ini akan 
+	dicetak apabila manajer meminta laporan tersebut melalui admin. Admin akan melakukan permintaan generate laporan kepada
+	aplikasi
+
+	2.2.	Karakteristik Pengguna
+	Kategori pengguna		tugas						Hak akses ke aplikasi
+	Petani(penjual)			Edit informasi , tambah stok			Sign in sebagai petani
+					, unggah informasi sayur, tambah nformasi	
+					
+	pembeli				Memesan, membeli, membayar, pesan jasa kirim	Sign in sebagai pembeli
+	
+	bank				Media pembayaran antara petani dan pembeli		-
+
+	2.3.	Batasan
+		Dalam pembuata aplikasi ini terdapat beberapa batasan , berikut merupakan batassan :
+		a.	Untuk pembelian hanya dapat dilakukan apabila pembeli atau pengguna sudah melakukan sign in
+		b.	Hanya mediakan form pembayaran untuk produk yang dipesan pembayaran hanya beberapa bank 
+		c.	Hanya berfungsi untuk platform android
+	2.4.	Lingkungan Operasi
+		Aplikasi dapat dijalankan dengan spesifikasi minimum :
+		•	RAM 1GB
+		•	OS Android 4.2.2 Jellybean
+		•	Prosesor 1.3GHz
+
+
 BAB 3
 Deskripsi Kebutuhan 
 3.1. Kebutuhan Antar Muka Eksternal
