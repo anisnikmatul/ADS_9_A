@@ -1,3 +1,50 @@
+1.	Pendahuluan 
+1.1	Tujuan Penulisan Dokumen 
+Dokumen ini ditulis dalam rangka menjabarkan spesifikasi kebutuhan perangkat lunak yang akan digunakan oleh Start-up Mlijo. Penjabaran spesifikasi perangkat lunak meliputi deskripsi umum perangkat lunak dan deskripsi kebutuhan perangkat lunak. Perangkat lunak yang akan dibangun bernama Mlijo. Dalam rangka membangun perangkat lunak tersebut, tentunya spesifikasi kebutuhan untuk perangkat lunak tersebut dibutuhkan, khususnya oleh para pengembang dan pembangun perangkat lunak tersebut.   
+1.2	Lingkup Masalah 
+Mlijo adalah sebuah aplikasi e-commerce produk pertanian dan perkebunan berbasis android yang menjual produk-produk petani lokal di kota Malang. Sistem ini mengintegrasikan antara petani sayur dan pemilik toko yang menjual produk-produk pertanian dan perkebunan sehingga sebagai user memungkinakan kita masuk dengan opsi sebagai petani atau pembeli. Untuk opsi sebagai pembeli kita dapat melakukan pendaftaran, sign in, memilih produk, melakukan pemesanan, mengisi jumlah produk yang akan dibbeli, dan melakukan pembayaran. Untuk opsi masuk sebagai petani kita dapat melakukan pendaftaran, sign in, mengupload produk yang siap jual, mengupload produk yang akan tersedia dikemudian hari, dan menerima pembayaran online. Sistem ini dikelola oleh seorang admin yang bertugas untuk memvalidasi data untuk opsi masuk petani untuk memastikan hasil produksi yang dijual benar-benar dari petani. Model bisnis mlijo yaitu memotong jalur distribusi sehingga para petani bisa langsung menjual hasil panen mereka langsung ke konsumen.
+1.3	Definisi, Istilah dan Singkatan 
+Berikut definisi, istilah serta singkatan yang digunakan dalam dokumen ini : 
+ 
+Tabel 1 Definisi, istilah dan singkatan 
+Definisi, Istilah dan/atau Singkatan 	Penjelasan 
+DFD 	Data Flow Diagram. Diagram yang menggambarkan aliran data. 
+ERD 	Entity Relationship Diagram. Diagram yang menggambarkan entitas suatu objek beserta relasinya. 
+Interface 	Antarmuka antara perangkat lunak dan pengguna 
+Data store 	Tempat penyimpanan data 
+API 	Application Programming Interface 
+ 
+1.4	Aturan Penomoran 
+Dalam dokumen ini, terdapat beberapa aturan penomoran yang dipakai. Untuk daftar penamaan perangkat lunak dijelaskan pada tabel dibawah ini : 
+ 
+Tabel 2 Aturan penomoran 
+Nama-ID 	Aturan penamaan 	Deskripsi 
+Kebutuhan fungsional 	SRS-F-IN/PR/OUT-xxx 	SRS adalah System Requirement Summary,  
+F adalah Fungsional  
+IN menunjukkan operasi Input 
+PR menunjukkan operasi Proses OUT menunjukkan output  xxx adalah nomor SRS-Id. 
+ 	 	 
+Kebutuhan  non fungsional 	SRS-NF-IN/PR/OUT-xxx 	SRS adalah System Requirement Summary 
+NF adalah non-Fungsional 
+IN menunjukkan operasi Input 
+PR menunjukkan operasi Proses OUT menunjukkan operasi Output xxx adalah nomor SRS-Id. 
+Bubble 	DFD-X-Y.Z 	DFD adalah Data Flow Diagram 
+X adalah nomor level diagram 
+Y.Z adalah nomer pada buble diagram 
+ 
+1.5	Referensi 
+Dokumen ini memiliki beberapa referensi dalam pembuatannya, yaitu sebagai berikut: 
+•	e-AGRIBISNIS : TEORI DAN APLIKASINYA. Agribisni, 2007(Snati 2007). 
+•	Delima, R., Santoso, H. B., & Purwadi, J. (2016). Kajian Aplikasi Pertanian yang Dikembangkan di Beberapa Negara Asia dan Afrika. Seminar Nasional Aplikasi Teknologi Informasi (SNATi) 2016, 19–26.
+•	Mayrowani, H. (2012). Pengembangan Pertanian Organik Di Indonesia The Development Of Organic Agriculture In Indonesia. Forum Penelitian Agro Ekonomi, 30(2), 91–108.
+
+1.6	Deskripsi umum Dokumen (Ikhtisar) 
+Dokumen Spesifikasi Kebutuhan Perangkat Lunak (SKPL) ini berisikan beberapa bagian besar, antara lain pendahuluan, deskripsi umum perangkat lunak, dan deskripsi kebutuhan. 
+Bagian pendahuluan berisi tujuan penulisan dokumen yang menjelaskan alasan dokumen ini dibuat, lingkup masalah yang berisi ringkasan deskripsi dari aplikasi yang akan dibuat, definisi, istilah dan singkatan yang digunakan dalam dokumen, aturan penomoran yang digunakan dalam dokumen ini, referensi yang dirujuk oleh dokumen dan ikhtisar dokumen ini.  
+Bagian deskripsi umum perangkat lunak berisi deskripsi umum dari sistem yang dibuat, karakteristik pengguna sistem, batasan yang dipakai dalam perangkat lunak itu sendiri, dan lingkungan operasi yang diperuntukan bagi perangkat lunak yang dibuat. 
+Bagian deskripsi kebutuhan di dalam dokumen ini meliputi kebutuhan antarmuka eksternal, kebutuhan fungsional, kebutuhan non fungsional, kebutuhan data, batasan perancangan perangkat lunak, keruntunan, dan ringkasan dari kebutuhan perangkat lunak, baik itu kebutuhan fungsional maupun kebutuhan non fungsional. Kebutuhan antarmuka eksternal meliputi antarmuka pemakai, antarmuka perangkat keras, antarmuak perangkat lunak, dan antarmuka komunikasi. Kebutuhan fungsional dan kebutuhan non fungsional perangkat lunak diuraikan dengan lengkap di bagian ini dan ringkasan dari kebutuhan perangkat lunak yang dibuat disertakan dalam dokumen ini. Kebutuhan fungsional perangkat lunak digambarkan dalam bentuk Data Flow Diagram (DFD), di mana DFD yang dibuat meliputi diagram konteks, DFD level 1, dan DFD level 2. Data store dari DFD yang dibuat pun dijelaskan di dalam dokumen ini. Selain DFD, kebutuhan fungsional perangkat lunak digambarkan dalam spesifikasi proses. Kebutuhan data dari perangkat lunak digambarkan dalam Entity Relationship Diagram (E-R Diagram). Batasan perancangan dari perangkat lunak yang akan dibuat tentunya harus dijelaskan dalam dokumen ini agar pengembang perangkat lunak lebih mudah dalam melakukan pekerjaannya. Keruntunan dari perangkat lunak yang dibuat digambarkan dengan cara mapping kebutuhan fungsional dengan proses pada DFD dan mapping data store DFD dengan Entity-Relationship Diagram.  
+
+
 BAB 2
 2.	Deskripsi  Umum Perangkat lunak
 	2.1.	Deskripsi Umum Sistem
