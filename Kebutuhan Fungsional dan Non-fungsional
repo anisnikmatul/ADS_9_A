@@ -1,0 +1,20 @@
+Kebutuhan Fungsional 
+1.	Untuk petani 
+-	Sistem dapat melakukan input profil
+-	Sistem menyediakan fitur untuk mengedit foto profil
+-	Sistem menyediakan fitur untuk mengunggah foto sayur dari petani 
+-	Sistem dapat menghitung jumlah stok
+-	Sistem menyediakan fitur untuk mengantarkan sayur 
+-	Sistem menyediakan sistem pembayaran melalui transfer 
+-	Sistem menyediakan fitur untuk pembatasan pembelian jmlah sayur
+2.	Untuk pembeli 
+-	Sistem menyediakan fitur untuk memesan sayur 
+-	Sistem dapat melakukan input profil
+-	Sistem menyediakan fitur untuk mengedit foto profil
+-	Sistem menyediakan fitur pencarian 
+-	Sistem menyediakan fitur untuk membeli sayur dari tukang sayur yang berbeda
+Kebutuhan Non fungsional
+-	Sistem dijalankan pada platfro android
+-	Proses dari pengguna membuka sebuah fitur sampai sisitem menampilkan fitur berlangsung tidak lebih dari 10 detik 
+-	Sistem memiliki tampilan abtar muka yang menarik
+-	Sistem mengguanakn bahasa Indonesia.  
