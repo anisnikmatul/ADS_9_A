@@ -1,0 +1,21 @@
+Requirement Analisis
+JUDUL	                        Sistem Informasi Pendistribusian Sayur
+Project Sponsor	              - Start up
+
+Bussiness Needs	              -	Mempermudah proses jual beli sayur
+                              -	Mengurangi penumpukan sayur pada pengepul
+                              -	Menghindari pengepul
+                              
+Bussiness Requirement	        -	Informasi tentang distribusi penjual sayur
+                              -	Menyediakan fitur pre order sayur
+                              -	Menyediakan informasi dari stok sayur
+                              -	Menampilkan harga jual sayur perkilonya
+                              -	Validasi untuk pengepul
+                              -	Validasi untuk petani
+                              
+Bussiness Value             	-	Mensejahterakan petani sayur
+                              -	Menjaga kualitas produk tetap segar sampai ke tangan konsumen 
+                              -	Menghindari pengepul
+                              
+Spesiall Isues	              -	Sisitem dibangun berbasis android
+                              -	Update data tentang harga sayur dilakukan oleh petani
