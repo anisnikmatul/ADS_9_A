@@ -130,3 +130,10 @@ SRS-F-IN-002	Sistem dapat malakukan input foto profil				Tampilan form pengupdat
 SRS-F-OUT-003	Sistem meydiakan fitur pencarian					Sistem menyediakan fitur pencarian untuk mencari produk maupun petani
 SRS-F-OUT-005	Sistem menyediakan fitur pembelian sayur				Sistem menampilkan tampilan berupa form untuk pembelian sayur
 SRS-F-OUT-006	Sistem menyediakan fitur untuk membeli sayur dari petani yang berbeda	Pembeli dapat membeli sayur dari petani yang berbeda
+
+
+3.2 DFD (Data Flow Diagram)
+3.2.1 DFD Level 0
+3.2.2 DFD level 1
+Level 1 DFD 1 terdapat 7 proses. Proses yang pertama adalah proses pendaftaran dimana petani dan pembeli melakukan pendaftaran yang kemudian data dari pembeli dan petani akan disimpan didalam data storge yang bernama member kmudian terdapat proses ke 2 yang dilakukan oleh admin yaitu proses validasi ptani dan penjual. Setelah proses validasi selesai lanjut ke proses yang ke 3 yaitu mengupdate produk dala proses ini hanya dilakukan oleh petani dimana petani dapat menambahkan produk mengupdate produk dan menghapus produk yang dia miliki yang kemudian akan disiman dalam storage produk. Proses yang ke 4 adalah proses pembelian produk dimana proses pembelian produk ini pembeli memasukkan data tentang pembelian dan sistem memberikan feedback berupa info pembelian yang produknya diambilkan dari storage produk. Proses yang ke 5 adalah proses pemesanan produk dimana proses pemesanan produk ini pembeli memasukkan data tentang produk yang dipesan dan sistem memberikan feedback berupa info pemesanan produknya diambilkan dari storage produk. Proses yang ke 6 adalah proses pembayaran yang dilakukan oleh pembeli, pembeli memberikan data tentang pembayaran kemudian akan langsung diproses oleh proses ke 7 yaitu validasi pembayaran dari admin kemudian semua data transaksi disimpan dalam storage transaksi setelah itu sistem memberikan feedback pada pembeli tentang info dari transaksi tersebut.
+
