@@ -131,6 +131,11 @@ SRS-F-OUT-003	Sistem meydiakan fitur pencarian					Sistem menyediakan fitur penc
 SRS-F-OUT-005	Sistem menyediakan fitur pembelian sayur				Sistem menampilkan tampilan berupa form untuk pembelian sayur
 SRS-F-OUT-006	Sistem menyediakan fitur untuk membeli sayur dari petani yang berbeda	Pembeli dapat membeli sayur dari petani yang berbeda
 
+3.1.2 Kebutuhan Non fungsional
+-	Sistem dijalankan pada platfro android
+-	Proses dari pengguna membuka sebuah fitur sampai sisitem menampilkan fitur berlangsung tidak lebih dari 10 detik 
+-	Sistem memiliki tampilan abtar muka yang menarik
+- Sistem mengguanakn bahasa Indonesia. 
 
 3.2 DFD (Data Flow Diagram)
 3.2.1 DFD Level 0
