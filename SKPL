@@ -134,6 +134,20 @@ SRS-F-OUT-006	Sistem menyediakan fitur untuk membeli sayur dari petani yang berb
 
 3.2 DFD (Data Flow Diagram)
 3.2.1 DFD Level 0
+pada dfd level0 ini aplikasiyang kita buat ada 3 peran yaitu pembeli, petani dan yang terakhr yaitu admin. pada pembeli mempunyai 3 aksi
+terhadap aplikasi melijo ini yang pertama dan kedua yaitu memberikan aksi terhadap aplikasi berupa memesan dan membeli sayur kemudian
+timbalbalik aplikasi terhadap pembeli berupa form beli dan pesan sayur yang kemudian di isi oleh pembeli, yang ketiga berupa edit profil
+yang emiliki timbal balik terhadap aplikasi berupa form edit sayur dan profil untuk pembeli. dan aksi yang diberikan oleh aplikasi untuk 
+pebeli berupa form daftar produk untuk mendaftar kan sayur.
+
+kedua petani dengan memberikan aksi berupa isi produk berguna untuk petani memiliki hak untuk mengisi produk pada aplikasi , kedua
+yaitu update stok berguna sebagai hak untuk update stok sayurpada aplikasi ini dan yang ketiga edit profil yang berguna untuk mengedit
+profil petani. dan timbal balik yang diterima petani terhadap aplikasi berupa memberikan form edit untuk mempermudah petani untuk
+mengedit segala sesuatu informasi tentang petani, form isi berguna untuk mempermudah petani untuk mengisikan informas mengenai aplikasi
+berupa stok dan jenis jenis sayur, dan form update ntuk mempermudah petani mengupdate segala informasi mengenai barang yang dijualdalam
+aplikasi
+
+terakhir admin yang mendapatkan aksi berupa laporan penjualan dan pembelian sayur 
 3.2.2 DFD level 1
 Level 1 DFD 1 terdapat 7 proses. Proses yang pertama adalah proses pendaftaran dimana petani dan pembeli melakukan pendaftaran yang kemudian data dari pembeli dan petani akan disimpan didalam data storge yang bernama member 
 
