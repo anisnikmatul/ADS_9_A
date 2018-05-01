@@ -1,0 +1,89 @@
+package com.tokopro.mayet.tokopro;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.CheckBox;
+import android.widget.EditText;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+
+public class dttoko extends AppCompatActivity {
+    Button ki, tam, ress;
+    EditText e7, e8, e10;
+    CheckBox ck, ck3, ck4;
+    ArrayList<String> isihistori = new ArrayList<>();
+    ListView histori;
+    String ckv, ckv2, ckv3;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate( savedInstanceState );
+        setContentView( R.layout.activity_dttoko );
+
+        ki = (Button) findViewById( R.id.button12 );
+        tam = (Button) findViewById( R.id.button15 );
+        ress = (Button) findViewById( R.id.button16 );
+        e7 = (EditText) findViewById( R.id.editText7 );
+        e8 = (EditText) findViewById( R.id.editText8 );
+        e10 = (EditText) findViewById( R.id.editText10 );
+        ck = (CheckBox) findViewById( R.id.checkBox );
+        ck3 = (CheckBox) findViewById( R.id.checkBox3 );
+        ck4 = (CheckBox) findViewById( R.id.checkBox4 );
+        histori=(ListView)findViewById( R.id.listhistori );
+
+        ki.setOnClickListener( new clickmenu() );
+        tam.setOnClickListener( new clictam() );
+        ress.setOnClickListener( new clickress() );
+    }
+
+    //nang menu
+    class clickmenu implements Button.OnClickListener{
+        public void onClick(View v){
+            Intent menu_go = new Intent( dttoko.this, Main2Activity.class );
+            finish();
+            startActivity(menu_go);
+        }
+    }
+    //reset
+    class clickress implements Button.OnClickListener{
+        public void onClick(View v){
+            e7.setText( "" );
+            e8.setText( "" );
+            e10.setText( "" );
+        }
+    }
+    //tambah
+    class clictam implements Button.OnClickListener{
+        public void onClick(View v){
+            if (ck.isChecked()){
+                ckv = "Jasa, ";
+            }else{
+                ckv = "";
+            }
+            if (ck3.isChecked()){
+                ckv2 = "Pakaian, ";
+            }else{
+                ckv2 = "";
+            }
+            if (ck4.isChecked()){
+                ckv3 = "Makanan, ";
+            }else{
+                ckv3 = "";
+            }
+
+            tampilhistori("Nama Toko : " + e7.getText().toString() +"\n" + "Telephone : " + e8.getText().toString()+ "\n"+ "Alamat : " + e10.getText().toString() + "\n" + "Jenis Jualan : " + ckv + ckv2 + ckv3 );
+            e7.setText( "" );
+            e8.setText( "" );
+            e10.setText( "" );
+        }
+    }
+    private void tampilhistori(String s) {
+        isihistori.add(s);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>( this, android.R.layout.simple_list_item_1, isihistori);
+        histori.setAdapter( adapter );
+    }
+}
