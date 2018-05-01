@@ -1,0 +1,90 @@
+package com.tokopro.mayet.tokopro;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
+
+import java.util.ArrayList;
+
+public class dtbarang extends AppCompatActivity {
+    Button b10, b13, b14;
+    EditText edit6, edit9, edit11;
+    RadioGroup rg1;
+    RadioButton rb1, rb2, rb3;
+    ArrayList<String> isihistori = new ArrayList<>();
+    ListView histori;
+    String rbv1, rbv2, rbv3;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate( savedInstanceState );
+        setContentView( R.layout.activity_dtbarang );
+        b10 = (Button) findViewById( R.id.button10 );
+        b13 = (Button) findViewById( R.id.button13 );
+        b14 = (Button) findViewById( R.id.button14 );
+        edit6 = (EditText) findViewById( R.id.editText6 );
+        edit9 = (EditText) findViewById( R.id.editText9 );
+        edit11 = (EditText) findViewById( R.id.editText11 );
+        rg1 = (RadioGroup) findViewById( R.id.RadioGroup01 );
+        rb1 = (RadioButton) findViewById( R.id.RadioButton1 );
+        rb2 = (RadioButton) findViewById( R.id.RadioButton2 );
+        rb3 = (RadioButton) findViewById( R.id.RadioButton3 );
+        histori=(ListView)findViewById( R.id.listhistori );
+        b14.setOnClickListener( new bersih() );
+        b13.setOnClickListener( new nambah() );
+        b10.setOnClickListener( new mbalek() );
+    }
+    //resikno textbox
+    class bersih implements Button.OnClickListener{
+        public void onClick(View v){
+            edit6.setText( "" );
+            edit9.setText( "" );
+            edit11.setText( "" );
+        }
+    }
+
+    //blalek nang menu
+    class mbalek implements Button.OnClickListener{
+        public void onClick(View v){
+            Intent selesai_menu = new Intent( dtbarang.this, Main2Activity.class );
+            finish();
+            startActivity(selesai_menu);
+        }
+    }
+
+    //tambah
+    class nambah implements Button.OnClickListener{
+        public void onClick(View v){
+            if (rb1.isChecked()){
+                rbv1 = "Jasa";
+            }else{
+                rbv1 = "";
+            }
+            if (rb2.isChecked()){
+                rbv2 = "Pakaian";
+            }else{
+                rbv2 = "";
+            }
+            if (rb3.isChecked()){
+                rbv3 = "Makanan";
+            }else{
+                rbv3 = "";
+            }
+            tampilhistori("Nama Barang : " + edit6.getText().toString() +"\n" + "Jumlah : " + edit9.getText().toString()+ "\n"+ "Harga : " + edit11.getText().toString() + "\n" + "Jenis Barang" + rbv1 + rbv2 + rbv3);
+            edit6.setText( "" );
+            edit9.setText( "" );
+            edit11.setText( "" );
+        }
+    }
+    private void tampilhistori(String s) {
+        isihistori.add(s);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>( this, android.R.layout.simple_list_item_1, isihistori);
+        histori.setAdapter( adapter );
+    }
+}
