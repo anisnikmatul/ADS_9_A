@@ -1,0 +1,106 @@
+package com.tokopro.mayet.tokopro;
+
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.app.Activity;
+import android.content.Intent;
+import android.view.Menu;
+import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.TextView;
+
+
+public class MainActivity extends AppCompatActivity {
+    EditText us, pass, usv, passv;
+    Button uye, ress, b1, b2, b3;
+    public static String acc;
+    public static String kunci;
+    TextView tl, t2, t3;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        us = (EditText) findViewById( R.id.editText );
+        pass = (EditText) findViewById( R.id.editText2 );
+
+        uye = (Button) findViewById( R.id.button );
+        ress = (Button) findViewById( R.id.button22 );
+        b1 = (Button) findViewById( R.id.button2 );
+        b2 = (Button) findViewById( R.id.button24 );
+
+        tl = (TextView) findViewById(R.id.textView3);
+        t2 = (TextView) findViewById(R.id.textView2);
+        t3 = (TextView) findViewById(R.id.textView4);
+
+        uye.setOnClickListener( new click01() );
+        ress.setOnClickListener( new click02() );
+        b1.setOnClickListener( new click04() );
+        b2.setOnClickListener( new click03() );
+    }
+    class click01 implements Button.OnClickListener{
+        public void onClick(View v){
+            acc = us.getText().toString();
+            kunci = pass.getText().toString();
+            Intent i = new Intent( MainActivity.this, Main2Activity.class );
+
+            if (us.getText().toString().equals( "firda" )){
+                if (pass.getText().toString().equals( "password" )){
+                    finish();
+                    startActivity(i);
+                }else {
+                    us.setText( "" );
+                    pass.setText( "" );
+                }
+            }else {
+                us.setText( "" );
+                pass.setText( "" );
+            }
+
+        }
+
+    }
+    class click02 implements Button.OnClickListener{
+        public void onClick(View v){
+            us.setText("");
+            pass.setText("");
+            ress.setVisibility(View.INVISIBLE);
+            b1.setVisibility(View.VISIBLE);
+            b2.setVisibility(View.VISIBLE);
+            //tl.setVisibility(View.VISIBLE);
+            //t2.setVisibility(View.VISIBLE);
+            //t3.setVisibility(View.VISIBLE);
+            //us.setVisibility(View.VISIBLE);
+            //pass.setVisibility(View.VISIBLE);
+            //uye.setVisibility(View.VISIBLE);
+            //pass.setVisibility(View.VISIBLE);
+
+        }
+    }
+    class click03 implements Button.OnClickListener{
+        public void onClick(View v){
+            us.setText("");
+            pass.setText("");
+            ress.setVisibility(View.INVISIBLE);
+            b1.setVisibility(View.INVISIBLE);
+            b2.setVisibility(View.INVISIBLE);
+            tl.setVisibility(View.VISIBLE);
+            t2.setVisibility(View.VISIBLE);
+            t3.setVisibility(View.VISIBLE);
+            us.setVisibility(View.VISIBLE);
+            pass.setVisibility(View.VISIBLE);
+            uye.setVisibility(View.VISIBLE);
+            pass.setVisibility(View.VISIBLE);
+
+        }
+    }
+    class click04 implements Button.OnClickListener{
+        public void onClick(View v){
+            Intent i = new Intent( MainActivity.this, Main3Activity.class );
+            finish();
+            startActivity(i);
+        }
+    }
+
+
+}
