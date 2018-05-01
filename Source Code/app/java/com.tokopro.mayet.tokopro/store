@@ -1,0 +1,109 @@
+package com.tokopro.mayet.tokopro;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
+
+import java.util.ArrayList;
+
+public class store extends AppCompatActivity {
+    Button ht, bk, tam, ress, car, hasil;
+    EditText e12, e14;
+    TextView h1, h2;
+    Double cc, hh, hu;
+    String biji, armada, potong, har, tot, as, per, ojk, drs;
+    ArrayList<String> isihistori = new ArrayList<>();
+    ListView histori;
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate( savedInstanceState );
+        setContentView( R.layout.activity_store );
+
+        bk = (Button) findViewById( R.id.button19 );
+        tam = (Button) findViewById( R.id.button20 );
+        ress = (Button) findViewById( R.id.button21 );
+        car = (Button) findViewById( R.id.button17 );
+        hasil = (Button) findViewById( R.id.button18 );
+        e12 = (EditText) findViewById( R.id.editText12 );
+        e14 = (EditText) findViewById( R.id.editText14 );
+        h1 = (TextView) findViewById( R.id.harga );
+        h2 = (TextView) findViewById( R.id.total );
+        histori=(ListView)findViewById( R.id.listhistori );
+        ht = (Button) findViewById( R.id.button18 );
+
+        ht.setOnClickListener( new totalan() );
+        bk.setOnClickListener( new clickbalik() );
+        ress.setOnClickListener( new clickclear() );
+        tam.setOnClickListener( new clickbuy() );
+        car.setOnClickListener( new clickcari() );
+    }
+    //balik
+    class clickbalik implements Button.OnClickListener{
+        public void onClick(View v){
+            Intent profil_go = new Intent( store.this, Main2Activity.class );
+            finish();
+            startActivity(profil_go);
+        }
+    }
+    //clear
+    class clickclear implements Button.OnClickListener{
+        public void onClick(View v){
+            e12.setText( "" );
+            e14.setText( "" );
+            h1.setText( "0" );
+            h2.setText( "0" );
+        }
+    }
+    //cari
+    class  clickcari implements Button.OnClickListener{
+        public void onClick(View v){
+//            per = "permen";
+//            ojk = "ojek";
+//            drs = "dress";
+//            as = e12.getText().toString();
+            har = h1.getText().toString();
+            if (e12.getText().toString().equals( "permen" )){
+                h1.setText("500");
+            }else if (e12.getText().toString().equals( "ojek" )){
+                h1.setText("50000");
+            }else if (e12.getText().toString().equals( "dres" )){
+                h1.setText("100000");
+            }else{
+                h1.setText("0");
+            }
+
+        }
+    }
+    class totalan implements Button.OnClickListener{
+        public void onClick(View v){
+
+            cc = Double.valueOf( e14.getText().toString() );
+            hu = Double.valueOf( h1.getText().toString() );
+            hh = cc * hu;
+            h2.setText(Double.toString(hh));
+        }
+    }
+    //buy
+    class clickbuy implements Button.OnClickListener{
+        public void onClick(View v){
+
+
+            tampilhistori("Nama : " + e12.getText().toString() +"\n" + "Harga : " + h1.getText().toString()+ "\n"+ "Total Harga : " + h2.getText().toString() );
+            e12.setText( "" );
+            e14.setText( "" );
+            h1.setText( "0" );
+            h2.setText( "0" );
+        }
+    }
+    private void tampilhistori(String s) {
+        isihistori.add(s);
+        ArrayAdapter<String> adapter = new ArrayAdapter<>( this, android.R.layout.simple_list_item_1, isihistori);
+        histori.setAdapter( adapter );
+    }
+}
