@@ -1,0 +1,94 @@
+package com.tokopro.mayet.tokopro;
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.Button;
+import android.widget.EditText;
+import android.widget.ListView;
+
+import java.util.ArrayList;
+
+public class profil extends AppCompatActivity {
+    Button b8, b9, b11, button9;
+    EditText e3, e4, e5;
+    Double a, b, c, hasil;
+
+    ArrayList<String> isihistori = new ArrayList<>();
+    ListView histori;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate( savedInstanceState );
+        setContentView( R.layout.activity_profil );
+
+        b8 = (Button) findViewById( R.id.button8 );
+        button9 = (Button) findViewById( R.id.button9 );
+        b11 = (Button) findViewById( R.id.button11 );
+        e3 = (EditText) findViewById( R.id.editText3 );
+        e4 = (EditText) findViewById( R.id.editText4 );
+        e5 = (EditText) findViewById( R.id.editText5 );
+        histori=(ListView)findViewById( R.id.listhistori );
+
+        b11.setOnClickListener( new clickreserprofil() );
+        button9.setOnClickListener( new clickta() );
+        b8.setOnClickListener( new clickselesai1() );
+
+    }
+
+    //selesai botton
+    class clickselesai1 implements Button.OnClickListener{
+        public void onClick(View v){
+            Intent selesai_menu = new Intent( profil.this, Main2Activity.class );
+            finish();
+            startActivity(selesai_menu);
+        }
+    }
+
+    class clickta implements Button.OnClickListener{
+        public void onClick(View v){
+//           String a =String.valueOf( e3.getText().toString() );
+//           String b =String.valueOf( e4.getText().toString() );
+//           String c =String.valueOf( e5.getText().toString() );
+
+           tampilhistori("Nama : " + e3.getText().toString() +"\n" + "User Id : " + e4.getText().toString()+ "\n"+ "Password : " + e5.getText().toString() );
+            e3.setText( "" );
+            e4.setText( "" );
+            e5.setText( "" );
+
+        }
+    }
+
+    //selesai tambah
+    //class clicktambahuser implements Button.OnClickListener{
+    //    public void onClick(View v){
+    //        a = Double.parseDouble( e3.getText().toString() );
+    //        b = Double.parseDouble( e4.getText().toString() );
+    //        c = Double.parseDouble( e5.getText().toString() );
+    //        switch (v.getId()){
+    //            case R.id.button9:
+                    //hasil = a + b + c;
+    //                this.tampilhistori(a + " " + b + " " + c);
+    //                break;
+    //        }
+    //    }
+        //histori
+        private void tampilhistori(String s) {
+            isihistori.add(s);
+            ArrayAdapter<String> adapter = new ArrayAdapter<>( this, android.R.layout.simple_list_item_1, isihistori);
+            histori.setAdapter( adapter );
+        }
+
+
+
+    //selesai reset
+    class clickreserprofil implements Button.OnClickListener{
+        public void onClick(View v){
+            e3.setText( "" );
+            e4.setText( "" );
+            e5.setText( "" );
+        }
+    }
+}
