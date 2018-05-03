@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_store"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.tokopro.mayet.tokopro.store">
+
+    <TextView
+        android:text="STORE"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView21"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:textStyle="normal|bold"/>
+
+    <TextView
+        android:text="nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText12"
+        android:layout_marginBottom="11dp"
+        android:id="@+id/textView23"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+    <Button
+        android:text="Cari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button17"
+        android:layout_alignTop="@+id/editText12"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_marginTop="19dp"
+        android:id="@+id/editText12"
+        android:layout_below="@+id/textView21"
+        android:layout_toLeftOf="@+id/button17"
+        android:layout_toStartOf="@+id/button17"/>
+
+    <TextView
+        android:text=",-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button17"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="22dp"
+        android:id="@+id/textView28"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:textAlignment="textStart"/>
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/textView28"
+        android:layout_toLeftOf="@+id/textView28"
+        android:id="@+id/harga"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_alignLeft="@+id/textView30"
+        android:layout_alignStart="@+id/textView30"
+        android:textAlignment="textEnd"/>
+
+    <TextView
+        android:text="Harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView30"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView31"/>
+
+    <TextView
+        android:text="Jumlah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/editText14"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView33"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_marginTop="22dp"
+        android:id="@+id/editText14"
+        android:layout_below="@+id/textView30"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:text="="
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/editText14"
+        android:layout_toRightOf="@+id/editText14"
+        android:layout_toEndOf="@+id/editText14"
+        android:id="@+id/button18"
+        android:layout_alignBottom="@+id/editText14"
+        android:textAlignment="center"/>
+
+    <TextView
+        android:text="Total Harga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView34"/>
+
+    <TextView
+        android:text=",-"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView35"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/textView36"
+        android:textStyle="normal|bold"
+        android:textSize="24sp"/>
+
+    <TextView
+        android:text="0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textView36"
+        android:layout_toLeftOf="@+id/textView36"
+        android:id="@+id/total"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_alignLeft="@+id/textView30"
+        android:layout_alignStart="@+id/textView30"
+        android:textAlignment="textEnd"/>
+
+    <TextView
+        android:text="Rp."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView35"
+        android:textStyle="normal|bold"
+        android:textAlignment="textEnd"
+        android:textSize="24sp"
+        android:layout_alignTop="@+id/textView34"
+        android:layout_toLeftOf="@+id/total"
+        android:layout_toStartOf="@+id/total"/>
+
+    <TextView
+        android:text="Rp."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView30"
+        android:textSize="24sp"
+        android:textStyle="normal|bold"
+        android:layout_alignBaseline="@+id/harga"
+        android:layout_alignBottom="@+id/harga"
+        android:layout_toLeftOf="@+id/button17"
+        android:layout_marginRight="46dp"
+        android:layout_marginEnd="46dp"/>
+
+    <Button
+        android:text="Kembali"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView36"
+        android:layout_alignLeft="@+id/button17"
+        android:layout_alignStart="@+id/button17"
+        android:layout_marginTop="28dp"
+        android:id="@+id/button19"/>
+
+    <Button
+        android:text="Tambah"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button19"
+        android:layout_toLeftOf="@+id/button19"
+        android:layout_toStartOf="@+id/button19"
+        android:id="@+id/button20"/>
+
+    <Button
+        android:text="Reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button21"
+        android:layout_alignBaseline="@+id/button20"
+        android:layout_alignBottom="@+id/button20"
+        android:layout_toLeftOf="@+id/button20"
+        android:layout_toStartOf="@+id/button20"/>
+
+    <ListView
+        android:id="@+id/listhistori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/button19">
+    </ListView>
+
+</RelativeLayout>
