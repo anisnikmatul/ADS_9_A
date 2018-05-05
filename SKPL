@@ -159,4 +159,19 @@ kemudian terdapat proses ke 2 yang dilakukan oleh admin yaitu proses validasi pt
 Proses yang ke 4 adalah proses pembelian produk dimana proses pembelian produk ini pembeli memasukkan data tentang pembelian dan sistem memberikan feedback berupa info pembelian yang produknya diambilkan dari storage produk. 
 Proses yang ke 5 adalah proses pemesanan produk dimana proses pemesanan produk ini pembeli memasukkan data tentang produk yang dipesan dan sistem memberikan feedback berupa info pemesanan produknya diambilkan dari storage produk. 
 Proses yang ke 6 adalah proses pembayaran yang dilakukan oleh pembeli, pembeli memberikan data tentang pembayaran  kemudian akan langsung diproses oleh proses ke 7 yaitu validasi pembayaran dari admin kemudian semua data transaksi disimpan dalam storage transaksi setelah itu sistem memberikan feedback pada pembeli tentang info dari transaksi tersebut.
+3.3 Kebutuhan Data
 
+3.4 Kebutuhan Non Fungsional 
+	Kebutuhan non-Fungsional yang terdapat pada aplikasi Melijoo antara lain adalah 
+Parameter	Kebutuhan
+Avability	Aplikasi harus terus selalu beroperasi selama 24 jam  setiap hari
+Reability 	Kegagalan dalam proses transaksi memiliki toleransi satu kali gagal 
+Ergonomy 	Tampilan antarmuka mudah dipahami user dan estetikanya bagus 
+Respon Time	Aplikasi mampu mengirimkan notifikasi e-mail pada pengguna maksimal 30 detik
+Avability	Aplikasi menggunakan bahasa Indonesia 
+Avability	Aplikasi menggunakan platfrom android
+
+3.5 Batasan Rancangan 
+Batasan rancangan yang dipakai dalam aplikasi melijoo ini antara lain 
+-	Tampilan antar muka dibuat dengan menggunakan photoshop dan corel draw
+-	Aplikasi yang digunakan dalam pembuatan aplikasi adalah github dan android studio
