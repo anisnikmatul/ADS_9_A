@@ -150,15 +150,31 @@ yaitu update stok berguna sebagai hak untuk update stok sayurpada aplikasi ini d
 profil petani. dan timbal balik yang diterima petani terhadap aplikasi berupa memberikan form edit untuk mempermudah petani untuk
 mengedit segala sesuatu informasi tentang petani, form isi berguna untuk mempermudah petani untuk mengisikan informas mengenai aplikasi
 berupa stok dan jenis jenis sayur, dan form update ntuk mempermudah petani mengupdate segala informasi mengenai barang yang dijualdalam
-aplikasi
+aplikasi terakhir admin yang mendapatkan aksi berupa laporan penjualan dan pembelian sayur 
 
-terakhir admin yang mendapatkan aksi berupa laporan penjualan dan pembelian sayur 
+
 3.2.2 DFD level 1
 Level 1 DFD 1 terdapat 7 proses. Proses yang pertama adalah proses pendaftaran dimana petani dan pembeli melakukan pendaftaran yang kemudian data dari pembeli dan petani akan disimpan didalam data storge yang bernama member 
 kemudian terdapat proses ke 2 yang dilakukan oleh admin yaitu proses validasi ptani dan penjual. Setelah proses validasi selesai  lanjut ke proses yang ke 3 yaitu mengupdate produk dala proses ini hanya dilakukan oleh petani dimana petani dapat menambahkan produk mengupdate produk dan menghapus produk yang dia miliki yang kemudian akan disiman dalam storage produk. 
 Proses yang ke 4 adalah proses pembelian produk dimana proses pembelian produk ini pembeli memasukkan data tentang pembelian dan sistem memberikan feedback berupa info pembelian yang produknya diambilkan dari storage produk. 
 Proses yang ke 5 adalah proses pemesanan produk dimana proses pemesanan produk ini pembeli memasukkan data tentang produk yang dipesan dan sistem memberikan feedback berupa info pemesanan produknya diambilkan dari storage produk. 
 Proses yang ke 6 adalah proses pembayaran yang dilakukan oleh pembeli, pembeli memberikan data tentang pembayaran  kemudian akan langsung diproses oleh proses ke 7 yaitu validasi pembayaran dari admin kemudian semua data transaksi disimpan dalam storage transaksi setelah itu sistem memberikan feedback pada pembeli tentang info dari transaksi tersebut.
+3.4.3 DFD level 2
+-	DFD level 2 Proses pendaftaran
+Gambar anis2.1
+-	DFD level 2 Proses Validasi Member
+Gambar anis2.2
+-	DFD level 2 Proses Mengupdate Produk
+Gambar anis2.3
+-	DFD level 2 Proses Pembelian produk 
+Gambar anis2.4
+-	DFD level 2 Proses Pemesanan Produk 
+Gambar anis2.5
+ -	DFD level 2 Proses Trnsakasi
+Gambar anis2.6
+-	DFD level 2 Proses Validasi Pembayaran
+Gambar anis2.7
+
 3.2.3. Spesifikasi Proses (P-SPEC)
 Kode melijoo	Deskripsi 
 DFD-0-1 	Proses ini merupakan suatu gambaran sistem secara keseluruhan. Yang melibatkan terminator serta data flow yang keluar masuk kedalam sistem. melijoo 0 akan dideskripsikan pada DFD level selanjutnya agar bisa memberikan gambaran secara lebih rici dan spesifik
