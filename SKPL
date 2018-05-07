@@ -169,6 +169,19 @@ DFD-1-4 	Proses ini berupa proes pembelian produk disini pembeli dapat membeli p
 DFD-1-5		Proses ini berupa proes pemesanan produk disini pembeli dapat memesan kemudian pembeli akan mendapat laporan tentang info sayur yang telah pembeli pesan
 DFD-1-6		Proses ini berupa proes pembayaran produk disini pembeli dapat membayar produk yang tela pembeli pesan maupun produk yang telah pembeli beli kemudian pembeli akan mendapat laporan pembayaran dari pembelian produk ataupun dari pemesan produk.
 DFD-1-7		Proses ini berupa proses verifikasi pembayaran yang dilakuakan oleh admin setelah pembeli melakukan upload bukti pembayaran. 
+DFD-2-1.1	Proses ini berupa proses menampilkan from mengisian untuk menu daftar
+DFD-2-1.2	Proses ini berupa proses untuk memasukkan data member berdasarkan list yang ada di form pendaftaran
+DFD-2-1.3	Proses ini berupa proses untuk menampilkan data member yang sudah terisi di  form pendaftaran
+DFD-2-2.1	Proses ini berupa proses untuk menampilkan info data meber yang sudah mendaftar yang diambil dari tabel daftar
+DFD-2-2.2	Proses ini berupa proses untuk menampilkan proses survey dari data member
+DFD-2-2.3	Proses ini berupa proses untuk menampilkan proses validasi dari data survey dan kemudian akan akan menghasilkan info validasi
+DFD-2-3.1	Proses ini berupa proses untuk menampilkan data produk 
+DFD-2-3.2	Proses ini berupa proses untuk menambahkan produk yang kemudian disimpan dalam storage Produk
+DFD-2-3.3	Proses ini berupa proses untuk mengupdate produk yang berasal dari  storage Produk
+DFD-2-4.1	Proses ini berupa proses untuk menampilkan data produk
+DFD-2-4.2	Proses ini berupa proses untuk pencarian data produk
+DFD-2-4.3	Proses ini berupa proses untuk menampilkan form pembelian data produk
+DFD-2-4.4	Proses ini berupa proses untuk mengisi form pembelian data produk
 
 
 3.2.4. Data Store
