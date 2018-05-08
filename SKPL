@@ -209,6 +209,7 @@ Data_Transaksi	Data_Transaksi adalah data yang berisi tentang riwayat pembayaran
 
 
 3.5 Kebutuhan Data
+3.5.1 ERD Diagram 
 
 3.6 Kebutuhan Non Fungsional 
 	Kebutuhan non-Fungsional yang terdapat pada aplikasi Melijoo antara lain adalah 
@@ -224,3 +225,27 @@ Avability	Aplikasi menggunakan platfrom android
 Batasan rancangan yang dipakai dalam aplikasi melijoo ini antara lain 
 -	Tampilan antar muka dibuat dengan menggunakan photoshop dan corel draw
 -	Aplikasi yang digunakan dalam pembuatan aplikasi adalah github dan android studio
+
+3.8  Kerunutan 
+	Suatu aplikasi yang baik akan memilikikebutuhan fungsional yang dapat dirunut model analisisnya. Berikut adalah tabel yang berisi traceabiliy dari harsil analisis kebutuhan  aplikasi 
+3.8.1. Kebutuhan Fungsional vs proses 
+Mapping kebutuhan fungsional dengan proses pada DFD untuk aplikasi Melijoo
+ID kebutuhan Fungsional		Nomer proses
+SRS-F-OUT-001			DFD-2-1.1
+SRS-F-OUT-002			DFD-2-3.1
+SRS-F-IN-003			DFD-2-1.3
+SRS-F-IN-004			DFD-2-3.2
+SRS-F-IN-005			DFD-2-3.3
+SRS-F-PR-006			DFD-2-3.3
+SRS-F-PR-007			DFD-2-6.3
+SRS-F-PR-007			DFD-2-6.1
+SRS-F-PR-007			DFD-2-6.2
+SRS-F-IN-001			DFD-2-5.3
+SRS-F-IN-001			DFD-2-5.4
+SRS-F-OUT-003			DFD-2-4.2
+SRS-F-OUT-003			DFD-2-5.2
+SRS-F-OUT-005			DFD-2-4.1
+SRS-F-OUT-005			DFD-2-4.2
+SRS-F-OUT-005			DFD-2-4.3
+
+
