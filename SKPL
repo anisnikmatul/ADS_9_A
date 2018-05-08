@@ -132,14 +132,14 @@ SRS-F-OUT-003	Sistem meydiakan fitur pencarian					Sistem menyediakan fitur penc
 SRS-F-OUT-005	Sistem menyediakan fitur pembelian sayur				Sistem menampilkan tampilan berupa form untuk pembelian sayur
 SRS-F-OUT-006	Sistem menyediakan fitur untuk membeli sayur dari petani yang berbeda	Pembeli dapat membeli sayur dari petani yang berbeda
 
-3.3 Kebutuhan Non fungsional
+Kebutuhan Non fungsional
 -	Sistem dijalankan pada platfro android
 -	Proses dari pengguna membuka sebuah fitur sampai sisitem menampilkan fitur berlangsung tidak lebih dari 10 detik 
 -	Sistem memiliki tampilan abtar muka yang menarik
 - Sistem mengguanakn bahasa Indonesia. 
 
-3.4 DFD (Data Flow Diagram)
-3.4.1 DFD Level 0
+DFD (Data Flow Diagram)
+3.2.1 DFD Level 0
 pada dfd level0 ini aplikasiyang kita buat ada 3 peran yaitu pembeli, petani dan yang terakhr yaitu admin. pada pembeli mempunyai 3 aksi
 terhadap aplikasi melijo ini yang pertama dan kedua yaitu memberikan aksi terhadap aplikasi berupa memesan dan membeli sayur kemudian
 timbalbalik aplikasi terhadap pembeli berupa form beli dan pesan sayur yang kemudian di isi oleh pembeli, yang ketiga berupa edit profil
@@ -154,13 +154,13 @@ berupa stok dan jenis jenis sayur, dan form update ntuk mempermudah petani mengu
 aplikasi terakhir admin yang mendapatkan aksi berupa laporan penjualan dan pembelian sayur 
 
 
-3.4.2 DFD level 1
+3.2.2 DFD level 1
 Level 1 DFD 1 terdapat 7 proses. Proses yang pertama adalah proses pendaftaran dimana petani dan pembeli melakukan pendaftaran yang kemudian data dari pembeli dan petani akan disimpan didalam data storge yang bernama member 
 kemudian terdapat proses ke 2 yang dilakukan oleh admin yaitu proses validasi ptani dan penjual. Setelah proses validasi selesai  lanjut ke proses yang ke 3 yaitu mengupdate produk dala proses ini hanya dilakukan oleh petani dimana petani dapat menambahkan produk mengupdate produk dan menghapus produk yang dia miliki yang kemudian akan disiman dalam storage produk. 
 Proses yang ke 4 adalah proses pembelian produk dimana proses pembelian produk ini pembeli memasukkan data tentang pembelian dan sistem memberikan feedback berupa info pembelian yang produknya diambilkan dari storage produk. 
 Proses yang ke 5 adalah proses pemesanan produk dimana proses pemesanan produk ini pembeli memasukkan data tentang produk yang dipesan dan sistem memberikan feedback berupa info pemesanan produknya diambilkan dari storage produk. 
 Proses yang ke 6 adalah proses pembayaran yang dilakukan oleh pembeli, pembeli memberikan data tentang pembayaran  kemudian akan langsung diproses oleh proses ke 7 yaitu validasi pembayaran dari admin kemudian semua data transaksi disimpan dalam storage transaksi setelah itu sistem memberikan feedback pada pembeli tentang info dari transaksi tersebut.
-3.4.3 DFD level 2
+3.2.3 DFD level 2
 -	DFD level 2 Proses pendaftaran
 Gambar anis2.1
 -	DFD level 2 Proses Validasi Member
@@ -176,7 +176,7 @@ Gambar anis2.6
 -	DFD level 2 Proses Validasi Pembayaran
 Gambar anis2.7
 
-3.4.3. Spesifikasi Proses (P-SPEC)
+3.2.4. Spesifikasi Proses (P-SPEC)
 Kode melijoo	Deskripsi 
 DFD-0-1 	Proses ini merupakan suatu gambaran sistem secara keseluruhan. Yang melibatkan terminator serta data flow yang keluar masuk kedalam sistem. melijoo 0 akan dideskripsikan pada DFD level selanjutnya agar bisa memberikan gambaran secara lebih rici dan spesifik
 DFD-1-1		Terminator yang dapat melakukan pilihan input adalah petani dan pembeli. Karena kedua terminator ini merupakan pengguna yang dapat melakukan akses pendaftaran terhadap aplikasi tersebut agar hasil regisrasi tersbut tersimpan 
@@ -201,17 +201,17 @@ DFD-2-4.3	Proses ini berupa proses untuk menampilkan form pembelian data produk
 DFD-2-4.4	Proses ini berupa proses untuk mengisi form pembelian data produk
 
 
-3.4.4. Data Store
+3.2.5. Data Store
 Data Store	Deskripsi
 Data_Member	Berisi deskripsi pembeli dan petani yang yang telah melakuakan registrasi.
 Data_Produk	Data_Produk meurpakan database yang dapat menyimpan data produk beserta jumlah yang tersedia. 
 Data_Transaksi	Data_Transaksi adalah data yang berisi tentang riwayat pembayaran yang dilakukan oleh pembeli.
 
 
-3.5 Kebutuhan Data
-3.5.1 ERD Diagram 
+3.3 Kebutuhan Data
+3.3.1 ERD Diagram 
 
-3.6 Kebutuhan Non Fungsional 
+3.4 Kebutuhan Non Fungsional 
 	Kebutuhan non-Fungsional yang terdapat pada aplikasi Melijoo antara lain adalah 
 Parameter	Kebutuhan
 Avability	Aplikasi harus terus selalu beroperasi selama 24 jam  setiap hari
@@ -221,14 +221,14 @@ Respon Time	Aplikasi mampu mengirimkan notifikasi e-mail pada pengguna maksimal 
 Avability	Aplikasi menggunakan bahasa Indonesia 
 Avability	Aplikasi menggunakan platfrom android
 
-3.7 Batasan Rancangan 
+3.5 Batasan Rancangan 
 Batasan rancangan yang dipakai dalam aplikasi melijoo ini antara lain 
 -	Tampilan antar muka dibuat dengan menggunakan photoshop dan corel draw
 -	Aplikasi yang digunakan dalam pembuatan aplikasi adalah github dan android studio
 
-3.8  Kerunutan 
+3.6  Kerunutan 
 	Suatu aplikasi yang baik akan memilikikebutuhan fungsional yang dapat dirunut model analisisnya. Berikut adalah tabel yang berisi traceabiliy dari harsil analisis kebutuhan  aplikasi 
-3.8.1. Kebutuhan Fungsional vs proses 
+3.6.1. Kebutuhan Fungsional vs proses 
 Mapping kebutuhan fungsional dengan proses pada DFD untuk aplikasi Melijoo
 ID kebutuhan Fungsional		Nomer proses
 SRS-F-OUT-001			DFD-2-1.1
@@ -248,4 +248,41 @@ SRS-F-OUT-005			DFD-2-4.1
 SRS-F-OUT-005			DFD-2-4.2
 SRS-F-OUT-005			DFD-2-4.3
 
+3.6 Rringkasan Kebutuhan 
+Aplikasi melijoo yang dibuat memiliki dua jenis kebutuhan, yaitu kebutuhan fungsional dan kebutuhan non fungsional.Kebutuhan ini mencerminkan semua hal yang harus dipenuhi, dan nantinya akan men
+jadi arahan untuk tahapan testing, karena pada dasarnya, semua kebutuhan harus dapat ditest. Berikut ini ringkasan dari aplikasi melijoo
+3.6.1 Kebutuhan Fungsional 
+Kebutuhan Fungsional 
+Berikut adalah kebutuhan fungsional dari petani dan pembeli pada aplikasi melijo
+-	Untuk Petani
+ID			Kebutuhan								Penjelasan
+SRS-F-OUT-001 	Sistem  menampilkan Form Login						Pengguna dapat login menggunakan g-mail
+SRS-F-OUT-002	Sistem menampilkan Tampilan Beranda 					Tampilan beranda berisi daftar nama produk yang tersedia dan produk yang yang bisa dipesan 
+SRS-F-IN-003	Sistem dapat malakukan input foto profil 				Tampilan form pengupdatean profil dari penjual maupun pembeli
+SRS-F-IN-004	Sistem menyediakan fitur untuk mengunggah foto sayur dari petani	Tampilan form untuk mengunggah produk dari petani
+SRS-F-IN-005	Sistem menyediakan fitur untuk mengedit produk 				Tampilan form pengupdatean produk dari petani seperti harga dan stok produk
+SRS-F-PR-006	Sistem dapat menghitung jumlah stok 					Sistem dapat otomatis menghitung sisa jumlah stok setelah pembeli melakukan pembelian 
+SRS-F-PR-007	Sistem menyediakan sistem pembayaran melalui transfer 			Transfer yang dilakukan pembeli menuju rekening aplikasi dan dari pihak aplikasi akan menyalurkan ke rekening admin
+SRS-F-PR-008	Sistem menyediakan fitur pembatasan pembelian jumlah sayur 	 	Sistem membatasi jumlah pembelian produk untuk menghindari pengepul 
+
+
+-	Untuk Pembeli 
+
+ID			Kebutuhan								Penjelasan 
+SRS-F-IN-001	Sistem menyediakan fitur untuk pemesanan sayur				Sistem menampilkan tampilan berupa form untuk pemmesanan sayur 
+SRS-F-IN-002	Sistem dapat malakukan input foto profil				Tampilan form pengupdatean profil dari penjual maupun pembeli
+SRS-F-OUT-003	Sistem meydiakan fitur pencarian					Sistem menyediakan fitur pencarian untuk mencari produk maupun petani
+SRS-F-OUT-005	Sistem menyediakan fitur pembelian sayur				Sistem menampilkan tampilan berupa form untuk pembelian sayur
+SRS-F-OUT-006	Sistem menyediakan fitur untuk membeli sayur dari petani yang berbeda	Pembeli dapat membeli sayur dari petani yang berbeda
+
+
+3.6.2 Kebutuhan Non fungsional
+Kebutuhan non-Fungsional yang terdapat pada aplikasi Melijoo antara lain adalah 
+Parameter				Kebutuhan
+Avability	Aplikasi harus terus selalu beroperasi selama 24 jam  setiap hari
+Reability 	Kegagalan dalam proses transaksi memiliki toleransi satu kali gagal 
+Ergonomy 	Tampilan antarmuka mudah dipahami user dan estetikanya bagus 
+Respon Time	Aplikasi mampu mengirimkan notifikasi e-mail pada pengguna maksimal 30 detik
+Avability	Aplikasi menggunakan bahasa Indonesia 
+Avability	Aplikasi menggunakan platfrom android
 
