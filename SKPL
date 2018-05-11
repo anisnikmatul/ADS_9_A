@@ -63,13 +63,14 @@ BAB 2
 	aplikasi
 
 	2.2.	Karakteristik Pengguna
-	Kategori pengguna		tugas						Hak akses ke aplikasi
-	Petani(penjual)			Edit informasi , tambah stok			Sign in sebagai petani
+	Kategori pengguna			tugas									Hak akses ke aplikasi
+	Petani(penjual)			petani dapat melakukan Edit informasi , tambah stok			Sign in sebagai petani
 					, unggah informasi sayur, tambah nformasi	
 					
-	pembeli				Memesan, membeli, membayar, pesan jasa kirim	Sign in sebagai pembeli
+	pembeli				Pembeli dapat melakukan memesan, membeli, membayar, pesan jasa kirim	Sign in sebagai pembeli
 	
-	bank				Media pembayaran antara petani dan pembeli		-
+	bank				Bank ini adalah sebuah Media untuk perantaran sistem pembayaran antara 
+					petani dan pembeli		-
 
 	2.3.	Batasan
 		Dalam pembuata aplikasi ini terdapat beberapa batasan , berikut merupakan batassan :
@@ -77,10 +78,10 @@ BAB 2
 		b.	Hanya mediakan form pembayaran untuk produk yang dipesan pembayaran hanya beberapa bank 
 		c.	Hanya berfungsi untuk platform android
 	2.4.	Lingkungan Operasi
-		Aplikasi dapat dijalankan dengan spesifikasi minimum :
-		•	RAM 1GB
-		•	OS Android 4.2.2 Jellybean
-		•	Prosesor 1.3GHz
+		Aplikasi melijoo ini dapat dijalankan dengan spesifikasi minimum :
+		•	RAMhandphone minimal 1GB
+		•	OS Android minimal 4.2.2 atau yang sering disebut dengan sistem operasi Jellybean
+		•	Prosesor minimal 1.3GHz
 
 
 BAB 3
